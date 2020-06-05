@@ -191,6 +191,7 @@ inline bool is_soft_ban_file(const string &name) {
 int syscall_max_cnt_list_default[][2] = {
 	{__NR_read          , -1},
 	{__NR_write         , -1},
+    {__NR_pread64       , -1},
 	{__NR_readv         , -1},
 	{__NR_writev        , -1},
 	{__NR_open          , -1},
